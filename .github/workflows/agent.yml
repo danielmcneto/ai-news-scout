@@ -2,8 +2,7 @@ name: Run new agent
 
 on:
   schedule:
-    #Monday 7AM Brasília
-    - cron: '0 10 * * 1' 
+    - cron: '0 10 * * 1'
   workflow_dispatch:
 
 jobs:
@@ -17,7 +16,7 @@ jobs:
         with:
           python-version: '3.10'
           
-      - name: Install dependecies
+      - name: Install dependencies
         run: |
           pip install -r requirements.txt
           
