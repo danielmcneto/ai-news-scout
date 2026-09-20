@@ -83,7 +83,7 @@ def analize_with_gemini(essays):
 def send_email(html_content):
     params = {
         "from": "News Agent <onboarding@resend.dev>",
-        "to": "youremail@yourdomain.com",
+        "to": [MY_EMAIL],
         "subject": "📰 Weekly News Briefing",
         "html": html_content,
     }
